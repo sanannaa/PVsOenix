@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.herosection {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/milad-fakurian-aWu6mtrJBx0-unsplash.jpg');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+on the container's size */
+  background-size: cover;
+
+  color: #d6d5a8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.herosection h2 {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+}
+.herosection h2 img {
+  width: 150px;
+  height: 120px;
+}
+
+.herosection p {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  width: 60%;
+  text-align: center;
+}
+
+.herosection p:first-of-type {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.secondsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  align-items: center;
+  background-color: #000000;
+  color: #d6d5a8;
+}
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card_image img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #d6d5a8;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #51557e 40%, #816797 100%);
+}
+
+.card_title {
+  color: #d6d5a8;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #d6d5a8;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  .herosection p {
+    font-size: 1.25rem;
+  }
+  .secondsection h2 {
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .herosection p:first-of-type {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+  }
+}
+@media screen and (max-width: 500px) {
+  .herosection p:first-of-type {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    width: 80%;
+  }
+  .herosection p {
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+.insightsection {
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #d6d5a8;
+  background-color: #000000;
+  color: #d6d5a8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.insightsection div {
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.insightsection div p:nth-child(2) {
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+}
+
+.chart {
+  height: 90vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  transform: scale(1.1);
+}
+
+.chart2 {
+  height: 90vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+canvas {
+  height: 500px;
+  width: 500px;
+}
+
+.chart3 {
+  height: 90vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.chart4 {
+  height: 90vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 800px) {
+  .insightsection div {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  .insightsection div p:nth-child(2) {
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+  }
+  .chart {
+    height: 70vh;
+  }
+  .chart2 {
+    height: 70vh;
+  }
+  .chart3 {
+    height: 50vh;
+  }
+  .chart4 {
+    height: 120vh;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+}

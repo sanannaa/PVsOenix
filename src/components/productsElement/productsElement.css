@@ -1,0 +1,43 @@
+.products {
+  position: absolute;
+  top: 20vh;
+  background-color: #000000;
+  color: #d6d5a8;
+  width: 100%;
+  border-top: 2px solid #d6d5a8;
+}
+
+.products div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.productsimgwrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 20px;
+}
+.productsimgwrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.products div p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .productsimgwrapper img {
+    width: 80%;
+    height: 80%;
+  }
+}

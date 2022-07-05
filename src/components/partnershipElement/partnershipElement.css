@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.partnershipWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.partnershipWrapper div:nth-child(1) {
+  width: 100%;
+  text-align: center;
+  color: #d6d5a8;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: black;
+  height: 70px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.partnershipWrapper div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partnershipWrapper div:nth-child(2) img {
+  margin: 60px;
+}

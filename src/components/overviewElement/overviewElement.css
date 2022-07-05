@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+.overviewElement {
+  top: 20vh;
+  left: 0%;
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  background-color: #000000;
+  z-index: -9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  color: #d6d5a8;
+  font-family: 'Raleway', sans-serif;
+}
+
+.imgwrapper {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 40%;
+  justify-content: center;
+}
+.imgwrapper img {
+  width: 70%;
+  height: 90%;
+}
+
+.introtext {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+}
+
+.intropara {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+  .introtext {
+    font-size: 1.5rem;
+  }
+
+  .intropara {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imgwrapper img {
+    width: 90%;
+    height: 100%;
+  }
+  .introtext {
+    font-size: 1rem;
+  }
+
+  .intropara {
+    font-size: 0.75rem;
+  }
+}

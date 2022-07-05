@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+.RandDwrapper,
+.lateximage {
+  position: absolute;
+  top: 20vh;
+  background-color: #000000;
+  color: #d6d5a8;
+  width: 100%;
+  border-top: 2px solid #d6d5a8;
+}
+.RandDwrapper div,
+.lateximage p {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  align-items: center;
+  justify-content: center;
+}
+.RandDwrapper div p {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.RandDwrapper div p li {
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.latex-link {
+  cursor: pointer;
+  border-bottom: 1px solid #d6d5a8;
+}
+
+.lateximgwrapper {
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+  height: 80vh;
+}
+.lateximgwrapper img {
+  width: 60%;
+  height: 100%;
+}
+.lateximage p {
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .RandDwrapper div p,
+  .lateximage p {
+    width: 80%;
+  }
+  .RandDwrapper div,
+  .lateximage p {
+    font-size: 1rem;
+  }
+  .lateximgwrapper img {
+    width: 80%;
+    height: 100%;
+  }
+
+  .lateximgwrapper {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lateximgwrapper img {
+    width: 90%;
+    height: 90%;
+  }
+  .lateximgwrapper {
+    height: 65vh;
+  }
+}
